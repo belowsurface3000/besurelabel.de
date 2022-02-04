@@ -30,31 +30,31 @@ function Releases() {
             <div className="left">
             {/* SIDE RELEASE NAVIGATION */}
                 <div className="release-navigation">
-                    <HashLink to="#25" className="sidenav-item" data-anchor="25">BESURE025</HashLink>
-                    <HashLink to="#24" className="sidenav-item" data-anchor="24">BESURE024</HashLink>
-                    <HashLink to="#23" className="sidenav-item" data-anchor="23">BESURE023</HashLink>
-                    <HashLink to="#22" className="sidenav-item" data-anchor="22">BESURE022</HashLink>
-                    <HashLink to="#21" className="sidenav-item" data-anchor="21">BESURE021</HashLink>
-                    <HashLink to="#20" className="sidenav-item" data-anchor="20">BESURE020</HashLink>
-                    <HashLink to="#19" className="sidenav-item" data-anchor="19">BESURE019</HashLink>
-                    <HashLink to="#18" className="sidenav-item" data-anchor="18">BESURE018</HashLink>
-                    <HashLink to="#17" className="sidenav-item" data-anchor="17">BESURE017</HashLink>
-                    <HashLink to="#16" className="sidenav-item" data-anchor="16">BESURE016</HashLink>
-                    <HashLink to="#15" className="sidenav-item" data-anchor="15">BESURE015</HashLink>
-                    <HashLink to="#14" className="sidenav-item" data-anchor="14">BESURE014</HashLink>
-                    <HashLink to="#13" className="sidenav-item" data-anchor="13">BESURE013</HashLink>
-                    <HashLink to="#12" className="sidenav-item" data-anchor="12">BESURE012</HashLink>
-                    <HashLink to="#11" className="sidenav-item" data-anchor="11">BESURE011</HashLink>
-                    <HashLink to="#10" className="sidenav-item" data-anchor="10">BESURE010</HashLink>
-                    <HashLink to="#9" className="sidenav-item" data-anchor="9">BESURE009</HashLink>
-                    <HashLink to="#8" className="sidenav-item" data-anchor="8">BESURE008</HashLink>
-                    <HashLink to="#7" className="sidenav-item" data-anchor="7">BESURE007</HashLink>
-                    <HashLink to="#6" className="sidenav-item" data-anchor="6">BESURE006</HashLink>
-                    <HashLink to="#5" className="sidenav-item" data-anchor="5">BESURE005</HashLink>
-                    <HashLink to="#4" className="sidenav-item" data-anchor="4">BESURE004</HashLink>
-                    <HashLink to="#3" className="sidenav-item" data-anchor="3">BESURE003</HashLink>
-                    <HashLink to="#2" className="sidenav-item" data-anchor="2">BESURE002</HashLink>
-                    <HashLink to="#1" className="sidenav-item" data-anchor="1">BESURE001</HashLink>
+                    <HashLink to="#25" className="sidenav-item">BESURE025</HashLink>
+                    <HashLink to="#24" className="sidenav-item">BESURE024</HashLink>
+                    <HashLink to="#23" className="sidenav-item">BESURE023</HashLink>
+                    <HashLink to="#22" className="sidenav-item">BESURE022</HashLink>
+                    <HashLink to="#21" className="sidenav-item">BESURE021</HashLink>
+                    <HashLink to="#20" className="sidenav-item">BESURE020</HashLink>
+                    <HashLink to="#19" className="sidenav-item">BESURE019</HashLink>
+                    <HashLink to="#18" className="sidenav-item">BESURE018</HashLink>
+                    <HashLink to="#17" className="sidenav-item">BESURE017</HashLink>
+                    <HashLink to="#16" className="sidenav-item">BESURE016</HashLink>
+                    <HashLink to="#15" className="sidenav-item">BESURE015</HashLink>
+                    <HashLink to="#14" className="sidenav-item">BESURE014</HashLink>
+                    <HashLink to="#13" className="sidenav-item">BESURE013</HashLink>
+                    <HashLink to="#12" className="sidenav-item">BESURE012</HashLink>
+                    <HashLink to="#11" className="sidenav-item">BESURE011</HashLink>
+                    <HashLink to="#10" className="sidenav-item">BESURE010</HashLink>
+                    <HashLink to="#9" className="sidenav-item">BESURE009</HashLink>
+                    <HashLink to="#8" className="sidenav-item">BESURE008</HashLink>
+                    <HashLink to="#7" className="sidenav-item">BESURE007</HashLink>
+                    <HashLink to="#6" className="sidenav-item">BESURE006</HashLink>
+                    <HashLink to="#5" className="sidenav-item">BESURE005</HashLink>
+                    <HashLink to="#4" className="sidenav-item">BESURE004</HashLink>
+                    <HashLink to="#3" className="sidenav-item">BESURE003</HashLink>
+                    <HashLink to="#2" className="sidenav-item">BESURE002</HashLink>
+                    <HashLink to="#1" className="sidenav-item">BESURE001</HashLink>
                 </div>
             </div>
 
