@@ -28,4 +28,4 @@ Landing page with navigation opened
 Artist page with social media buttons and releases
 ![Artist page with social media buttons and releases](screenshots/besure-react3.png)
 Lighthouse SEO Report
-![Lighthouse SEO Report](screenshots/besure-react4.png)
+![Lighthouse SEO Report](screenshots/besure-react6.png)
