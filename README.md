@@ -27,7 +27,5 @@ Landing page with navigation opened
 ![Landing page with navigation opened](screenshots/besure-react2.png)
 Artist page with social media buttons and releases
 ![Artist page with social media buttons and releases](screenshots/besure-react3.png)
-Artist page on iPad resolution
-![Artist page on iPad resolution](screenshots/besure-react4.png)
-Contact form on iPhone resolution
-![Contact form on iPhone resolution](screenshots/besure-react5.png)
+Lighthouse SEO Report
+![Lighthouse SEO Report](screenshots/besure-react4.png)
