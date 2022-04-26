@@ -4,26 +4,27 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url("../ressources/montserrat/montserrat-v18-latin-regular.woff2") format("woff2"),
-    url("../ressources/montserrat/montserrat-v18-latin-regular.woff") format("woff")
+    src: url("../public/resources/montserrat/montserrat-v18-latin-regular.woff2") format("woff2"),
+    url("../public/resources/montserrat/montserrat-v18-latin-regular.woff") format("woff")
 }
 @font-face {
     font-family: "Montserrat";
     font-weight: 200;
-    src: url("../ressources/montserrat/montserrat-v18-latin-200.woff") format("woff"),
-    url("../ressources/montserrat/montserrat-v18-latin-200.woff2") format("woff2")
+    src: url("../public/resources/montserrat/montserrat-v18-latin-200.woff") format("woff"),
+    url("../public/resources/montserrat/montserrat-v18-latin-200.woff2") format("woff2")
 }
 @font-face {
     font-family: "Montserrat";
     font-weight: bold;
-    src: url("../ressources/montserrat/montserrat-v18-latin-700.woff") format("woff"),
-    url("../ressources/montserrat/montserrat-v18-latin-700.woff2") format("woff2")
+    src: url("../public/resources/montserrat/montserrat-v18-latin-700.woff") format("woff"),
+    url("../public/resources/montserrat/montserrat-v18-latin-700.woff2") format("woff2")
 }
 @font-face {
     font-family: "FontAwesome";
-    src: url("../ressources/fontawesome/fontawesome-webfont.woff2") format("woff2"),
-    url("../ressources/fontawesome/fontawesome-webfont.woff") format("woff")
+    src: url("../public/resources/fontawesome/fontawesome-webfont.woff2") format("woff2"),
+    url("../public/resources/fontawesome/fontawesome-webfont.woff") format("woff")
 }
+
 
 // GENERAL PAGE SETTINGS
 body {
@@ -89,6 +90,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: top .4s;
+    display: none;
     .nav-icon {
         width: 55px;
         height: 45px;
@@ -148,16 +150,24 @@ body {
     top: -100px;
 }
 
-// CLICK TO OPEN NAVIGATION
-.click-navigation {
+// NAVIGATION
+nav {
+    margin: 10px 0;
+    @include flexBox;
+    flex-direction: row;
+    > a {
+        padding: 0 15px;
+    }
+}
+.mobile-navigation {
     height: 100vh;
     width: 100vw;
     position: fixed;
     z-index: 99;
     background: rgba(0, 0, 0, .9);
     overflow: scroll;
+    margin: 0;
     @include flexBox;
-    flex-direction: column;
     > a {
         margin: 25px 0 0;
         font-size: 3rem;
@@ -1021,6 +1031,12 @@ footer {
     :root {
         font-size: 88%;
     }
+    .navigation-trigger {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
     main {  
         .releases {
             .left, .right {
@@ -1127,8 +1143,7 @@ footer {
             }
         }
     }
-    // CLICK TO OPEN NAVIGATION
-    .click-navigation {
+    .mobile-navigation {
         > a {
             margin: 25px 0 3px;
             font-size: 2rem;

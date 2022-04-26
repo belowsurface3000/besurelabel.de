@@ -4,8 +4,8 @@ const initialState = {
     contact: false
 }
 
-export const usersReducer = (state = initialState, {type, payload}) => {
-    switch(type) {
+export const usersReducer = (state = initialState,  { type, payload }) => {
+    switch (type) {
         case "ACCEPTCOOKIES":
             return {...state, cookies: true};
         case "REJECTCOOKIES":
@@ -19,6 +19,6 @@ export const usersReducer = (state = initialState, {type, payload}) => {
         case "SHOWCONTACTFORM":
             return {...state, contact: true};
         default:
-            return state;
+            return state;        
     }
 }

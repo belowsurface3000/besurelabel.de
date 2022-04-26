@@ -1,17 +1,12 @@
 import React, { useEffect } from 'react';
-import LazyLoad from 'react-lazyload';
 import { useDispatch, useSelector } from 'react-redux';
 import { acceptCookies } from '../store/actions/usersActions';
 
 function Downloads() {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     // redux part
     const dispatch = useDispatch();
-    const cookiesAccepted = (useSelector((state) => state.userReducer.cookies));
+    const cookiesAccepted = (useSelector((state) => state.usersReducer.cookies));
     const confirmCookies = () => {
         dispatch(acceptCookies());
         localStorage.setItem("acceptedCookies", "true");
@@ -35,9 +30,9 @@ function Downloads() {
                         <a href="https://besurelabel.de/promos/mp3/BESURE002_Tension_-_Triebmensch_EP_%28mp3%29.zip" target="_blank" rel="noreferrer">MP3 download</a>
                     </div>
                     {(cookiesAccepted) ? 
-                        <LazyLoad className="iframe-container" once>
+                        <div className="iframe-container">
                                 <iframe title="Release Preview" className="iframe-large" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/109625662&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        </LazyLoad>
+                        </div>
                     :
                         <div className="iframe-without-cookies">
                             <p>You have not accepted Cookies yet. To display the Soundcloud preview of this track, please accept Cookies first. Read more about Soundcloud Cookies here: <a href="https://soundcloud.com/pages/cookies">https://soundcloud.com/pages/cookies</a></p>
@@ -60,9 +55,9 @@ function Downloads() {
                         <a href="https://besurelabel.de/promos/mp3/Mathew_Jonson_-_Marionette_%28Below_Surface_Edit%29_mp3.zip" target="_blank" rel="noreferrer">MP3 download</a>
                     </div>
                     {(cookiesAccepted) ? 
-                        <LazyLoad className="iframe-container" once>
+                        <div className="iframe-container">
                             <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177932926&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        </LazyLoad>
+                        </div>
                     :
                         <div className="iframe-without-cookies">
                             <p>You have not accepted Cookies yet. To display the Soundcloud preview of this track, please accept Cookies first. Read more about Soundcloud Cookies here: <a href="https://soundcloud.com/pages/cookies">https://soundcloud.com/pages/cookies</a></p>
@@ -85,9 +80,9 @@ function Downloads() {
                         <a href="https://besurelabel.de/promos/mp3/SHDW_%26_Obscure_Shape_-_Die_weisse_Rose_%28Below_Surface_Edit%29_mp3.zip" target="_blank" rel="noreferrer">MP3 download</a>
                     </div>
                     {(cookiesAccepted) ? 
-                        <LazyLoad className="iframe-container" once>
+                        <div className="iframe-container">
                             <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816829729&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        </LazyLoad>
+                        </div>
                     :
                         <div className="iframe-without-cookies">
                             <p>You have not accepted Cookies yet. To display the Soundcloud preview of this track, please accept Cookies first. Read more about Soundcloud Cookies here: <a href="https://soundcloud.com/pages/cookies">https://soundcloud.com/pages/cookies</a></p>
@@ -110,9 +105,9 @@ function Downloads() {
                         <a href="https://besurelabel.de/promos/mp3/Below_Surface_-_Silence_is_Golden_mp3.zip" target="_blank" rel="noreferrer">MP3 download</a>
                     </div>
                     {(cookiesAccepted) ? 
-                        <LazyLoad className="iframe-container" once>
+                        <div className="iframe-container">
                             <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/817036753&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        </LazyLoad>
+                        </div>
                     :
                         <div className="iframe-without-cookies">
                             <p>You have not accepted Cookies yet. To display the Soundcloud preview of this track, please accept Cookies first. Read more about Soundcloud Cookies here: <a href="https://soundcloud.com/pages/cookies">https://soundcloud.com/pages/cookies</a></p>
@@ -135,9 +130,9 @@ function Downloads() {
                         <a href="https://besurelabel.de/promos/mp3/Tension_-_EVP_%28Below_Surface_Remix%29_%28mp3%29.zip" target="_blank" rel="noreferrer">MP3 download</a>
                     </div>
                     {(cookiesAccepted) ? 
-                        <LazyLoad className="iframe-container" once>
+                        <div className="iframe-container">
                             <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745866142&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        </LazyLoad>
+                        </div>
                     :
                         <div className="iframe-without-cookies">
                             <p>You have not accepted Cookies yet. To display the Soundcloud preview of this track, please accept Cookies first. Read more about Soundcloud Cookies here: <a href="https://soundcloud.com/pages/cookies">https://soundcloud.com/pages/cookies</a></p>
@@ -160,9 +155,9 @@ function Downloads() {
                         <a href="https://besurelabel.de/promos/mp3/Florian_Bo_-_Keep_the_Pressure_%28Below_Surface_Remix%29_%28mp3%29.zip" target="_blank" rel="noreferrer">MP3 download</a>
                     </div>
                     {(cookiesAccepted) ? 
-                        <LazyLoad className="iframe-container" once>
+                        <div className="iframe-container">
                             <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228851504&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        </LazyLoad>
+                        </div>
                     :
                         <div className="iframe-without-cookies">
                             <p>You have not accepted Cookies yet. To display the Soundcloud preview of this track, please accept Cookies first. Read more about Soundcloud Cookies here: <a href="https://soundcloud.com/pages/cookies">https://soundcloud.com/pages/cookies</a></p>

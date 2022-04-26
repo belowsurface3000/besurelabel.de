@@ -1,17 +1,11 @@
-import React, { useEffect } from 'react';
-import LazyLoad from 'react-lazyload';
 import { useDispatch, useSelector } from 'react-redux';
 import { acceptCookies } from '../store/actions/usersActions';
 
 function Videos() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   // redux part
   const dispatch = useDispatch();
-  const cookiesAccepted = (useSelector((state) => state.userReducer.cookies));
+  const cookiesAccepted = (useSelector((state) => state.usersReducer.cookies));
   const confirmCookies = () => {
       dispatch(acceptCookies());
       localStorage.setItem("acceptedCookies", "true");
@@ -26,9 +20,7 @@ function Videos() {
         <div className="video">
           <h3>Be Sure | a techno film by Below Surface</h3>
           {(cookiesAccepted) ?
-            <LazyLoad once>
-              <iframe src="https://www.youtube.com/embed/OHDyDXFTe1M" title="Be Sure, a techno film Below Surface" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </LazyLoad>
+              <iframe src="https://www.youtube.com/embed/OHDyDXFTe1M" loading="lazy" title="Be Sure, a techno film Below Surface" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           :
             <div className="iframe-without-cookies">
               <p>You have not accepted Cookies yet. To display the Youtube video, please accept Cookies first. Read more about Youtube/Google Cookies here: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
@@ -61,9 +53,7 @@ function Videos() {
         <div className="video">
           <h3>Absorbed LIVE at Tresor Berlin</h3>
           {(cookiesAccepted) ?
-            <LazyLoad once>
-              <iframe src="https://www.youtube.com/embed/PwzkRUTl0fU" title="Absorbed live at Tresor Berlin" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </LazyLoad>
+            <iframe src="https://www.youtube.com/embed/PwzkRUTl0fU" loading="lazy" title="Absorbed live at Tresor Berlin" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             :
             <div className="iframe-without-cookies">
               <p>You have not accepted Cookies yet. To display the Youtube video, please accept Cookies first. Read more about Youtube/Google Cookies here: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
@@ -97,9 +87,7 @@ function Videos() {
         <div className="video">
             <h3>Absorbed LIVE at Midi-Festival Suzhou</h3>
             {(cookiesAccepted) ?
-              <LazyLoad once>
-                <iframe src="https://www.youtube.com/embed/4x634402Y7M" title="Absorbed live at Midi-Festival Suzhou" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </LazyLoad>
+              <iframe src="https://www.youtube.com/embed/4x634402Y7M" loading="lazy" title="Absorbed live at Midi-Festival Suzhou" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             :
               <div className="iframe-without-cookies">
                 <p>You have not accepted Cookies yet. To display the Youtube video, please accept Cookies first. Read more about Youtube/Google Cookies here: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>

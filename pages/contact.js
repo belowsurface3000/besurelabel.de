@@ -5,9 +5,7 @@ import emailjs from "emailjs-com";
 
 function Contact() {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+
 
     // contact form code
     const [userInput, setUserInput] = useState("");
@@ -34,7 +32,7 @@ function Contact() {
 
     // redux part
         const dispatch = useDispatch();
-        const contactTermsAccepted = (useSelector((state) => state.userReducer.contact));
+        const contactTermsAccepted = (useSelector((state) => state.usersReducer.contact));
         const acceptCookies = () => {
             dispatch(showContactForm());
         };
@@ -47,12 +45,12 @@ function Contact() {
                 <h2>Get in touch with Be Sure</h2>
                 <h4>via Social Media:</h4>
                 <div className="socials">
-                    <a href="https://www.youtube.com/channel/UCB0jjmkPvZ3r9NYJ7HCtpxw" target="_blank" rel="noreferrer"><img src={require("../pics/yt.png")} alt="Link to Be Sure's Youtube channel" /><p>Youtube</p></a>
-                    <a href="https://soundcloud.com/besurelabel" target="_blank" rel="noreferrer"><img src={require("../pics/sc.png")} alt="Link to Be Sure's Soundcloud channel" /><p>Soundcloud</p></a>
-                    <a href="https://open.spotify.com/artist/6tcSqEAmHTLmrztjM0dQl2" target="_blank" rel="noreferrer"><img src={require("../pics/sf.png")} alt="Link to Be Sure's Spotify" /><p>Spotify</p></a>
-                    <a href="https://facebook.com/besurelabel" target="_blank" rel="noreferrer"><img src={require("../pics/fb.png")} alt="Link to Be Sure's Facebook page" /><p>Facebook</p></a>
-                    <a href="https://www.instagram.com/besurelabel" target="_blank" rel="noreferrer"><img src={require("../pics/ig.png")} alt="Link to Be Sure's Instagram page" /><p>Instagram</p></a>
-                    <a href="https://www.beatport.com/label/be-sure/47385" target="_blank" rel="noreferrer"><img src={require("../pics/bp.png")} alt="Link to Be Sure's Beatport page" /><p>Beatport</p></a>
+                    <a href="https://www.youtube.com/channel/UCB0jjmkPvZ3r9NYJ7HCtpxw" target="_blank" rel="noreferrer"><img src="/pics/yt.png" alt="Link to Be Sure's Youtube channel" /><p>Youtube</p></a>
+                    <a href="https://soundcloud.com/besurelabel" target="_blank" rel="noreferrer"><img src="/pics/sc.png" alt="Link to Be Sure's Soundcloud channel" /><p>Soundcloud</p></a>
+                    <a href="https://open.spotify.com/artist/6tcSqEAmHTLmrztjM0dQl2" target="_blank" rel="noreferrer"><img src="/pics/sf.png" alt="Link to Be Sure's Spotify" /><p>Spotify</p></a>
+                    <a href="https://facebook.com/besurelabel" target="_blank" rel="noreferrer"><img src="/pics/fb.png" alt="Link to Be Sure's Facebook page" /><p>Facebook</p></a>
+                    <a href="https://www.instagram.com/besurelabel" target="_blank" rel="noreferrer"><img src="/pics/ig.png" alt="Link to Be Sure's Instagram page" /><p>Instagram</p></a>
+                    <a href="https://www.beatport.com/label/be-sure/47385" target="_blank" rel="noreferrer"><img src="/pics/bp.png" alt="Link to Be Sure's Beatport page" /><p>Beatport</p></a>
                 </div>
                 <h4>via the Contact Form:</h4>
                 <h4>**ADVERTISING & SPAM ARE STRICTLY FORBIDDEN**</h4>
