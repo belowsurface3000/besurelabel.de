@@ -49,7 +49,7 @@ function Downloads() {
                         <p>Mathew Jonson - Marionette (Below Surface Edit)</p>
                         <p>12/2014</p>
                     </div>
-                    <p>Below Surface Edit of "Mathew Jonson - Marionette" - inspired by the edit of Adam Beyer, which i heared in the Drumcode Mix 173 from Berghain (Drumcode Total). Since i loved the idea of Adam, but couldn't find his edit anywhere, I decided to do one by myself.</p>
+                    <p>Below Surface Edit of &apos;Mathew Jonson - Marionette&apos; - inspired by the edit of Adam Beyer, which i heared in the Drumcode Mix 173 from Berghain (Drumcode Total). Since i loved the idea of Adam, but couldn&apos;t find his edit anywhere, I decided to do one by myself.</p>
                     <div className="links">
                         <a href="https://besurelabel.de/promos/wav/Mathew_Jonson_-_Marionette_%28Below_Surface_Edit%29.zip" target="_blank" rel="noreferrer">WAVE download</a>
                         <a href="https://besurelabel.de/promos/mp3/Mathew_Jonson_-_Marionette_%28Below_Surface_Edit%29_mp3.zip" target="_blank" rel="noreferrer">MP3 download</a>
@@ -71,10 +71,10 @@ function Downloads() {
                 <div className="download">
                     <div className="meta">
                         <p>0000</p>
-                        <p>SHDW & Obscure Shape - Die weisse Rose (Below Surface Edit)</p>
+                        <p>SHDW &amp; Obscure Shape - Die weisse Rose (Below Surface Edit)</p>
                         <p>2020</p>
                     </div>
-                    <p>The Below Surface Edit of "Die weisse Rose" by SHDW & Obscure Shape.</p>
+                    <p>The Below Surface Edit of &apos;Die weisse Rose&apos; by SHDW &amp; Obscure Shape.</p>
                     <div className="links">
                         <a href="https://besurelabel.de/promos/wav/SHDW_%26_Obscure_Shape_-_Die_weisse_Rose_%28Below_Surface_Edit%29.zip" target="_blank" rel="noreferrer">WAVE download</a>
                         <a href="https://besurelabel.de/promos/mp3/SHDW_%26_Obscure_Shape_-_Die_weisse_Rose_%28Below_Surface_Edit%29_mp3.zip" target="_blank" rel="noreferrer">MP3 download</a>
@@ -124,7 +124,7 @@ function Downloads() {
                         <p>Tension - EVP (Below Surface Remix)</p>
                         <p>2014</p>
                     </div>
-                    <p>As played in the Tresor Livest of Absorbed in 2014: Below Surface Remix of Tension's EVP (unreleased).</p>
+                    <p>As played in the Tresor Livest of Absorbed in 2014: Below Surface Remix of Tension&apos;s EVP (unreleased).</p>
                     <div className="links">
                         <a href="https://besurelabel.de/promos/wav/Tension_-_EVP_%28Below_Surface_Remix%29.zip" target="_blank" rel="noreferrer">WAVE download</a>
                         <a href="https://besurelabel.de/promos/mp3/Tension_-_EVP_%28Below_Surface_Remix%29_%28mp3%29.zip" target="_blank" rel="noreferrer">MP3 download</a>

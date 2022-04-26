@@ -7,10 +7,6 @@ import ReleaseList from "./releaseList.json";
 
 function Promos() {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     // redux part
     const dispatch = useDispatch();
     const cookiesAccepted = (useSelector((state) => state.userReducer.cookies));
@@ -22,7 +18,7 @@ function Promos() {
 
     return <>
         <div className="logo">
-            <img src={require("../pics/logo-shadow.png")} alt="Be Sure Logo" />
+            <img src="../pics/logo-shadow.png" alt="Be Sure Logo" />
         </div>
         <main>
             <div className="releases" id="releases">

@@ -20,7 +20,7 @@ function Videos() {
         <div className="video">
           <h3>Be Sure | a techno film by Below Surface</h3>
           {(cookiesAccepted) ?
-              <iframe src="https://www.youtube.com/embed/OHDyDXFTe1M" loading="lazy" title="Be Sure, a techno film Below Surface" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe src="https://www.youtube.com/embed/OHDyDXFTe1M" loading="lazy" title="Be Sure, a techno film Below Surface" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           :
             <div className="iframe-without-cookies">
               <p>You have not accepted Cookies yet. To display the Youtube video, please accept Cookies first. Read more about Youtube/Google Cookies here: <a href="https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a></p>
@@ -42,7 +42,7 @@ function Videos() {
           06. Below Surface - On the Run (Be Sure)<br />
           07. Below Surface - Immersed Spheres (Be Sure)<br />
           08. Below Surface - 215 (Be Sure)<br />
-          09. Below Surface & Tension - Intrusion (Be Sure)<br />
+          09. Below Surface &amp; Tension - Intrusion (Be Sure)<br />
           10. Below Surface - A Part Apart (Be Sure)<br />
           11. Below Surface - Sometimes (Be Sure)<br />
           12. Below Surface - Lost in a Subway (Be Sure)<br />
@@ -71,14 +71,14 @@ function Videos() {
           02. Absorbed - Be Pure (Be Sure)<br />
           03. Tension - EVP (Below Surface Remix) (Unreleased)<br />
           04. Absorbed - Steregroove (Be Sure)<br />
-          05. Absorbed & Tension - Bodymove (Be Sure)<br />
+          05. Absorbed &amp; Tension - Bodymove (Be Sure)<br />
           06. Absorbed - Independend Robot (Be Sure)<br />
           07. Below Surface - Expanding Metropolis (Be Sure)<br />
           08. Absorbed - In Chaos (Be Sure)<br />
           09. Absorbed - Intrude (Be Sure)<br />
           10. Absorbed - Interstice (Be Sure)<br />
           11. Below Surface - Tragic (Be Sure)<br />
-          12. Below Surface - Can't Stup The Dub (NextWeekRecords)<br />
+          12. Below Surface - Can&apos;t Stup The Dub (NextWeekRecords)<br />
           13. Below Surface - Driving (Be Sure)<br />
           14. Mathew Jonson - Marionette (Below Surface Edit)<br />
           15. Absorbed - Endtrack (Be Sure)</p>
@@ -103,9 +103,9 @@ function Videos() {
             04. Absorbed - Interstice (Be Sure)<br />
             05. Below Surface - Immersed in Spheres (Be Sure)<br />
             06. Below Surface - Expanding Metropolis (Be Sure)<br />
-            07. Absorbed & Tension - Bodymove (Be Sure)<br />
+            07. Absorbed &amp; Tension - Bodymove (Be Sure)<br />
             08. Below Surface - Splitting Off (Tekseven)<br />
-            09. Below Surface - Can't Stup the Dub (Next Week Records)<br />
+            09. Below Surface - Can&apos;t Stup the Dub (Next Week Records)<br />
             10. Below Surface - Driving (Be Sure)<br />
             11. Absorbed - 215 (Be Sure)<br />
             12. Mathew Jonson - Marionette (Below Surface Edit)<br />

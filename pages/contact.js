@@ -53,7 +53,7 @@ function Contact() {
                     <a href="https://www.beatport.com/label/be-sure/47385" target="_blank" rel="noreferrer"><img src="/pics/bp.png" alt="Link to Be Sure's Beatport page" /><p>Beatport</p></a>
                 </div>
                 <h4>via the Contact Form:</h4>
-                <h4>**ADVERTISING & SPAM ARE STRICTLY FORBIDDEN**</h4>
+                <h4>**ADVERTISING &amp; SPAM ARE STRICTLY FORBIDDEN**</h4>
                     {(contactTermsAccepted) ? 
                         <form ref={form} onSubmit={sendEmail}>
                             <label htmlFor="name">Your Name:</label>
@@ -66,7 +66,7 @@ function Contact() {
                         </form> 
                     :
                         <form>
-                            <p>Sending spam or advertising is strictly forbidden. You can use the contact form for questions or if you want to collaborate with us in music.<br/><b>Type "okay"</b> to unlock the contact form:</p>
+                            <p>Sending spam or advertising is strictly forbidden. You can use the contact form for questions or if you want to collaborate with us in music.<br/><b>Type: okay</b> to unlock the contact form:</p>
                             <label htmlFor="riddle"></label>
                             <input type="text" id="riddle" name="riddle" placeholder="Just type 'okay' in here" value={userInput} onChange={changeHandler} required />
                         </form>

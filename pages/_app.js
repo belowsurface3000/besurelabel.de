@@ -30,7 +30,7 @@ function App({ Component, pageProps }) {
         <meta name="referrer" content="origin" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/pics/custom-icon.png" />
-        <title>Be Sure | Techno & Ambient Music</title>
+        <title>Be Sure | Techno &amp; Ambient Music</title>
       </Head>
 
       <Background />
