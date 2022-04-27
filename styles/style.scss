@@ -78,6 +78,8 @@ body {
     }
 }
 
+
+
 // NAVIGATION TRIGGER BUTTON
 .navigation-trigger {
     position: fixed;
@@ -150,6 +152,8 @@ body {
     top: -100px;
 }
 
+
+
 // NAVIGATION
 nav {
     margin: 10px 0;
@@ -168,6 +172,7 @@ nav {
     overflow: scroll;
     margin: 0;
     @include flexBox;
+    flex-direction: column;
     > a {
         margin: 25px 0 0;
         font-size: 3rem;
@@ -181,6 +186,8 @@ nav {
     }
 }
 
+
+
 // LOGO
 .logo {
     @include mainDivStyling;
@@ -191,6 +198,8 @@ nav {
         max-height: 500px;
     }
 }
+
+
 
 
 // COOKIE BANNER
@@ -245,7 +254,9 @@ nav {
         }
     }
 }
-// END OF OUT OF PAGE FLOW
+
+
+
 
 // MAIN
 main {

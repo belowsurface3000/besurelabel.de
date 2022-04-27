@@ -1,4 +1,4 @@
-import { Provider } from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
 import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { allReducers } from "../store/reducers/allReducers"
@@ -8,6 +8,8 @@ import Navigation from "../components/Navigation"
 import NavigationButton from "../components/NavigationButton";
 import Background from '../components/Background';
 import CookieBanner from '../components/CookieBanner';
+import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 const myStore = createStore(allReducers, composeWithDevTools());
 
@@ -41,6 +43,8 @@ function App({ Component, pageProps }) {
       <NavigationButton />
 
       <Component {...pageProps} />
+
+      <Footer />
 
     </Provider>
   )

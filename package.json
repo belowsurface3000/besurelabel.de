@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "preexport": "npm run build",
+    "export": "next build && next export",
+    "prestart": "npm run export",
+    "start": "serve out"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0",
