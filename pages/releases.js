@@ -1,6 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { acceptCookies } from "../store/actions/usersActions";
 import ReleaseList from "./releaseList.json";
+import LazyLoad from "../components/Lazyload";
+import { useEffect, useRef, useState } from 'react';
 
 function Releases() {
 
@@ -12,6 +14,18 @@ function Releases() {
         localStorage.setItem("acceptedCookies", "true");
     };
     // redux end
+
+    // Custom hook "LazyLoad"
+    const iframeRef = useRef();
+    const iframeRefValue = LazyLoad(iframeRef);
+    const [isIframeRef, setIsIframeRef] = useState(false);
+    useEffect(() => {
+        if (!isIframeRef) setIsIframeRef(iframeRefValue);
+    }, [iframeRefValue]);
+
+    
+   
+
 
     return <>
         <div className="logo">
@@ -80,7 +94,7 @@ function Releases() {
                                             </div>
                                         }
                                     </>
-                                    :
+                                :
                                     <div className="iframe-without-cookies">
                                         <p>You have not accepted Cookies yet. To display the Soundcloud preview of this track, please accept Cookies first. Read more about Soundcloud Cookies here: <a href="https://soundcloud.com/pages/cookies">https://soundcloud.com/pages/cookies</a></p>
                                         <div className="buttons">

@@ -17,7 +17,7 @@ function Footer() {
             <div className="bottom">
                 <div className="links">
                     <Link href="/impressum"><a>Impressum</a></Link>
-                    <p>|</p>
+                    <Link href="/promos"><a>|</a></Link>
                     <Link href="/datenschutz"><a>Datenschutz</a></Link>
                 </div>    
                 <p>(c) 2022 <a href="https://belowsurface.de" target="_blank" rel="noreferrer">Below Surface Medien</a></p>
