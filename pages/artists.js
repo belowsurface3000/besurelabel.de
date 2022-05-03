@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 function Artists() {
-  return <>
+  return (
     <main>
       <div className="artists">
         <h2>All Be Sure Artists</h2>
@@ -25,7 +25,7 @@ function Artists() {
         </div>
       </div>
     </main>
-  </>;
+  );
 }
 
 export default Artists;

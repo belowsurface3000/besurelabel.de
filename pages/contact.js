@@ -16,7 +16,6 @@ function Contact() {
     const emailService = process.env.REACT_APP_EMAIL_SERVICE;
     const emailTemplate = process.env.REACT_APP_EMAIL_TEMPLATE;
     const emailUser = process.env.REACT_APP_EMAIL_USER;
-
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -30,16 +29,19 @@ function Contact() {
     };
     // contact end
 
-    // redux part
-        const dispatch = useDispatch();
-        const contactTermsAccepted = (useSelector((state) => state.usersReducer.contact));
-        const acceptCookies = () => {
-            dispatch(showContactForm());
-        };
-        if (userInput === "okay") acceptCookies();
-    // redux end
+
+
+    // redux
+    const dispatch = useDispatch();
+    const contactTermsAccepted = (useSelector((state) => state.usersReducer.contact));
+    const acceptCookies = () => {
+        dispatch(showContactForm());
+    };
+    if (userInput === "okay") acceptCookies();
+        
+
     
-    return <>
+    return (
         <main>
             <div className="get-in-touch">
                 <h2>Get in touch with Be Sure</h2>
@@ -73,7 +75,7 @@ function Contact() {
                     }
             </div>
         </main>
-    </>;
+    );
 }
 
 export default Contact;

@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { acceptCookies } from "../store/actions/usersActions";
 import ReleaseList from "./releaseList.json";
-import Link from 'next/link';
 import 'lazysizes';
 
 function Promos() {
