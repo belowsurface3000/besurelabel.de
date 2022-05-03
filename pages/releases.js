@@ -1,32 +1,18 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { acceptCookies } from "../store/actions/usersActions";
 import ReleaseList from "./releaseList.json";
-import LazyLoad from "../components/Lazyload";
-import { useEffect, useRef, useState } from 'react';
+import 'lazysizes';
 
 function Releases() {
 
-    // redux part
+    // redux
     const dispatch = useDispatch();
     const cookiesAccepted = (useSelector((state) => state.usersReducer.cookies));
     const confirmCookies = () => {
         dispatch(acceptCookies());
         localStorage.setItem("acceptedCookies", "true");
     };
-    // redux end
-
-    // Custom hook "LazyLoad"
-    const iframeRef = useRef();
-    const iframeRefValue = LazyLoad(iframeRef);
-    const [isIframeRef, setIsIframeRef] = useState(false);
-    useEffect(() => {
-        if (!isIframeRef) setIsIframeRef(iframeRefValue);
-    }, [iframeRefValue]);
-
-    
    
-
-
     return <>
         <div className="logo">
             <img src="/pics/logo-shadow.png" alt="Be Sure Logo" />
@@ -86,13 +72,13 @@ function Releases() {
                                     <>
                                         {item.iframeLarge === false ?
                                             <div className="iframe-container">
-                                                <iframe title="Release Preview" src={item.soundcloudPreview}></iframe>
+                                                <iframe title="Release Preview" className="iframe lazyload" data-src={item.soundcloudPreview}></iframe>
                                             </div>
                                         :
                                             <div className="iframe-container-large">
-                                                <iframe title="Release Preview" className="iframe-large" src={item.soundcloudPreview}></iframe>
+                                                <iframe title="Release Preview" className="iframe-large lazyload" data-src={item.soundcloudPreview}></iframe>
                                             </div>
-                                        }
+                                        } 
                                     </>
                                 :
                                     <div className="iframe-without-cookies">

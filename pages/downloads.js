@@ -1,17 +1,16 @@
-import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { acceptCookies } from '../store/actions/usersActions';
+import 'lazysizes';
 
 function Downloads() {
 
-    // redux part
+    // redux
     const dispatch = useDispatch();
     const cookiesAccepted = (useSelector((state) => state.usersReducer.cookies));
     const confirmCookies = () => {
         dispatch(acceptCookies());
         localStorage.setItem("acceptedCookies", "true");
     };
-    // redux end
 
     return <>
         <main>
@@ -31,7 +30,7 @@ function Downloads() {
                     </div>
                     {(cookiesAccepted) ? 
                         <div className="iframe-container">
-                                <iframe title="Release Preview" className="iframe-large" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/109625662&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                <iframe title="Release Preview" className="iframe-large lazyload" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/109625662&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                         </div>
                     :
                         <div className="iframe-without-cookies">
@@ -56,7 +55,7 @@ function Downloads() {
                     </div>
                     {(cookiesAccepted) ? 
                         <div className="iframe-container">
-                            <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177932926&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <iframe title="Release Preview" className="lazyload" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177932926&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                         </div>
                     :
                         <div className="iframe-without-cookies">
@@ -81,7 +80,7 @@ function Downloads() {
                     </div>
                     {(cookiesAccepted) ? 
                         <div className="iframe-container">
-                            <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816829729&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <iframe title="Release Preview" className="lazyload" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/816829729&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                         </div>
                     :
                         <div className="iframe-without-cookies">
@@ -106,7 +105,7 @@ function Downloads() {
                     </div>
                     {(cookiesAccepted) ? 
                         <div className="iframe-container">
-                            <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/817036753&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <iframe title="Release Preview" className="lazyload" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/817036753&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                         </div>
                     :
                         <div className="iframe-without-cookies">
@@ -131,7 +130,7 @@ function Downloads() {
                     </div>
                     {(cookiesAccepted) ? 
                         <div className="iframe-container">
-                            <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745866142&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <iframe title="Release Preview" className="lazyload" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745866142&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                         </div>
                     :
                         <div className="iframe-without-cookies">
@@ -156,7 +155,7 @@ function Downloads() {
                     </div>
                     {(cookiesAccepted) ? 
                         <div className="iframe-container">
-                            <iframe title="Release Preview" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228851504&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            <iframe title="Release Preview" className="lazyload" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228851504&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                         </div>
                     :
                         <div className="iframe-without-cookies">

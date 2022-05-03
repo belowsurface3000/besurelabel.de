@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { acceptCookies } from "../store/actions/usersActions";
 import ReleaseList from "./releaseList.json";
 import Link from 'next/link';
+import 'lazysizes';
 
 function Promos() {
 
@@ -24,31 +25,31 @@ function Promos() {
                 <div className="left">
                 {/* SIDE RELEASE NAVIGATION */}
                     <div className="release-navigation">
-                        <Link href="#25" className="sidenav-item"><a>BESURE025</a></Link>
-                        <Link href="#24" className="sidenav-item"><a>BESURE024</a></Link>
-                        <Link href="#23" className="sidenav-item"><a>BESURE023</a></Link>
-                        <Link href="#22" className="sidenav-item"><a>BESURE022</a></Link>
-                        <Link href="#21" className="sidenav-item"><a>BESURE021</a></Link>
-                        <Link href="#20" className="sidenav-item"><a>BESURE020</a></Link>
-                        <Link href="#19" className="sidenav-item"><a>BESURE019</a></Link>
-                        <Link href="#18" className="sidenav-item"><a>BESURE018</a></Link>
-                        <Link href="#17" className="sidenav-item"><a>BESURE017</a></Link>
-                        <Link href="#16" className="sidenav-item"><a>BESURE016</a></Link>
-                        <Link href="#15" className="sidenav-item"><a>BESURE015</a></Link>
-                        <Link href="#14" className="sidenav-item"><a>BESURE014</a></Link>
-                        <Link href="#13" className="sidenav-item"><a>BESURE013</a></Link>
-                        <Link href="#12" className="sidenav-item"><a>BESURE012</a></Link>
-                        <Link href="#11" className="sidenav-item"><a>BESURE011</a></Link>
-                        <Link href="#10" className="sidenav-item"><a>BESURE010</a></Link>
-                        <Link href="#9" className="sidenav-item"><a>BESURE009</a></Link>
-                        <Link href="#8" className="sidenav-item"><a>BESURE008</a></Link>
-                        <Link href="#7" className="sidenav-item"><a>BESURE007</a></Link>
-                        <Link href="#6" className="sidenav-item"><a>BESURE006</a></Link>
-                        <Link href="#5" className="sidenav-item"><a>BESURE005</a></Link>
-                        <Link href="#4" className="sidenav-item"><a>BESURE004</a></Link>
-                        <Link href="#3" className="sidenav-item"><a>BESURE003</a></Link>
-                        <Link href="#2" className="sidenav-item"><a>BESURE002</a></Link>
-                        <Link href="#1" className="sidenav-item"><a>BESURE001</a></Link>
+                        <a href="#25" className="sidenav-item">BESURE025</a>
+                        <a href="#24" className="sidenav-item">BESURE024</a>
+                        <a href="#23" className="sidenav-item">BESURE023</a>
+                        <a href="#22" className="sidenav-item">BESURE022</a>
+                        <a href="#21" className="sidenav-item">BESURE021</a>
+                        <a href="#20" className="sidenav-item">BESURE020</a>
+                        <a href="#19" className="sidenav-item">BESURE019</a>
+                        <a href="#18" className="sidenav-item">BESURE018</a>
+                        <a href="#17" className="sidenav-item">BESURE017</a>
+                        <a href="#16" className="sidenav-item">BESURE016</a>
+                        <a href="#15" className="sidenav-item">BESURE015</a>
+                        <a href="#14" className="sidenav-item">BESURE014</a>
+                        <a href="#13" className="sidenav-item">BESURE013</a>
+                        <a href="#12" className="sidenav-item">BESURE012</a>
+                        <a href="#11" className="sidenav-item">BESURE011</a>
+                        <a href="#10" className="sidenav-item">BESURE010</a>
+                        <a href="#9" className="sidenav-item">BESURE009</a>
+                        <a href="#8" className="sidenav-item">BESURE008</a>
+                        <a href="#7" className="sidenav-item">BESURE007</a>
+                        <a href="#6" className="sidenav-item">BESURE006</a>
+                        <a href="#5" className="sidenav-item">BESURE005</a>
+                        <a href="#4" className="sidenav-item">BESURE004</a>
+                        <a href="#3" className="sidenav-item">BESURE003</a>
+                        <a href="#2" className="sidenav-item">BESURE002</a>
+                        <a href="#1" className="sidenav-item">BESURE001</a>
                     </div>
                 </div>
 
@@ -72,11 +73,11 @@ function Promos() {
                                     <>
                                         {item.iframeLarge === false ?
                                             <div className="iframe-container">
-                                                <iframe title="Release Preview" src={item.soundcloudPreview}></iframe>
+                                                <iframe title="Release Preview" className="lazyload" data-src={item.soundcloudPreview}></iframe>
                                             </div>
                                         :
                                             <div className="iframe-container-large">
-                                                <iframe title="Release Preview" className="iframe-large" src={item.soundcloudPreview}></iframe>
+                                                <iframe title="Release Preview" className="iframe-large lazyload" data-src={item.soundcloudPreview}></iframe>
                                             </div>
                                         }
                                     </>
