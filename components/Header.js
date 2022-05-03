@@ -11,8 +11,8 @@ function Header() {
             <meta property="og:image" content="/pics/thumb-img.png" />
             <meta property="og:url" content="https://besurelabel.de" />
             <meta property="og:type" content="website" />
-            <meta property="og:title" content="Be Sure - the Techno and Ambient Label from Berlin" />
-            <meta property="og:description" content="Quality music from Berlin's underground. International artists, respectable supporters and state of the art music." />
+            <meta property="og:title" content="Be Sure - the Techno and Ambient Label from Bonn" />
+            <meta property="og:description" content="Quality music from Bonn's underground. International artists, respectable supporters and state of the art music." />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="referrer" content="origin" />
             <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
