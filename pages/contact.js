@@ -6,16 +6,15 @@ import emailjs from "emailjs-com";
 function Contact() {
 
 
-
     // contact form code
     const [userInput, setUserInput] = useState("");
     const changeHandler = (e) => {
         setUserInput((e.target.value).toLowerCase());
     }
     // emailjs start
-    const emailService = process.env.REACT_APP_EMAIL_SERVICE;
-    const emailTemplate = process.env.REACT_APP_EMAIL_TEMPLATE;
-    const emailUser = process.env.REACT_APP_EMAIL_USER;
+    const emailService = process.env.EMAIL_SERVICE;
+    const emailTemplate = process.env.EMAIL_TEMPLATE;
+    const emailUser = process.env.EMAIL_USER;
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -56,7 +55,7 @@ function Contact() {
                 </div>
                 <h4>via the Contact Form:</h4>
                 <h4>**ADVERTISING &amp; SPAM ARE STRICTLY FORBIDDEN**</h4>
-                    {(contactTermsAccepted) ? 
+                    {contactTermsAccepted ? 
                         <form ref={form} onSubmit={sendEmail}>
                             <label htmlFor="name">Your Name:</label>
                             <input type="text" id="name" name="name" placeholder="Please type in your name here" required />
