@@ -8,7 +8,7 @@ function Header() {
             <meta name="description" content="Quality Techno and Ambient from Bonn. International artists, great supporters and state of the art music." />
             <meta name="keywords" content="Techno, Ambient, Music, Bonn" />
             <meta name="author" content="Below Surface" />
-            <meta property="og:image" content="/pics/thumb-img.png" />
+            <meta property="og:image" content="https://besurelabel.de/pics/thumb-img.png" />
             <meta property="og:url" content="https://besurelabel.de" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Be Sure - the Techno and Ambient Label from Bonn" />
