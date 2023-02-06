@@ -53,6 +53,7 @@ function Contact() {
                     <a href="https://www.instagram.com/besurelabel" target="_blank" rel="noreferrer"><img src="/pics/ig.png" alt="Link to Be Sure's Instagram page" /><p>Instagram</p></a>
                     <a href="https://www.beatport.com/label/be-sure/47385" target="_blank" rel="noreferrer"><img src="/pics/bp.png" alt="Link to Be Sure's Beatport page" /><p>Beatport</p></a>
                 </div>
+                
                 <h4>via the Contact Form:</h4>
                 <h4>**ADVERTISING &amp; SPAM ARE STRICTLY FORBIDDEN**</h4>
                     {contactTermsAccepted ? 

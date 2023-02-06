@@ -12,6 +12,7 @@ function Footer() {
                     <Link href="/supporters"><a>Supporters</a></Link>
                     <Link href="/downloads"><a>Downloads</a></Link>
                     <Link href="/contact"><a>Contact</a></Link>
+                    <Link href="https://besure.blog"><a>Coding Blog</a></Link>
                 </div>
             </div>
             <div className="bottom">
@@ -20,7 +21,7 @@ function Footer() {
                     <Link href="/promos"><a>|</a></Link>
                     <Link href="/datenschutz"><a>Datenschutz</a></Link>
                 </div>    
-                <p>(c) 2022 <a href="https://belowsurface.de" target="_blank" rel="noreferrer">Below Surface Medien</a></p>
+                <p>(c) {new Date().getFullYear()} <a href="https://belowsurface.de" target="_blank" rel="noreferrer">Below Surface Medien</a></p>
             </div>
         </footer>
     )
